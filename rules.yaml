@@ -10,11 +10,21 @@
   - Rule:
     - MouseGesture: Mouse Right
     - KeyPress:
-      - [Control_L, Alt_L, Right]
+      - [Control_L, Alt_L, Left]
       - click
   - Rule:
     - MouseGesture: Mouse Left
     - KeyPress:
-      - [Control_L, Alt_L, Left]
+      - [Control_L, Alt_L, Right]
       - click
+  - Rule:
+    - MouseGesture: Mouse Down
+    - KeyPress:
+      - [Control_L, Alt_L, Down]
+      - click
+  - Rule:
+    - And:
+      - KeyPress:
+        - [Alt_L, Right]
+        - click
 ...
