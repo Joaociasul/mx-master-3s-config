@@ -4,27 +4,46 @@
   - Key: [Smart Shift, released]
   - Rule:
     - MouseGesture: Mouse Up
-    - KeyPress:
-      - [Control_L, Alt_L, t]
-      - click
+    - Later:
+      - 0.1
+      - KeyPress:
+        - [Control_L, Alt_L, t]
+        - click
   - Rule:
     - MouseGesture: Mouse Right
-    - KeyPress:
-      - [Control_L, Alt_L, Left]
-      - click
+    - Later:
+      - 0.1
+      - KeyPress:
+        - [Control_L, Alt_L, Left]
+        - click
   - Rule:
     - MouseGesture: Mouse Left
-    - KeyPress:
-      - [Control_L, Alt_L, Right]
-      - click
+    - Later:
+      - 0.1
+      - KeyPress:
+        - [Control_L, Alt_L, Right]
+        - click
   - Rule:
     - MouseGesture: Mouse Down
-    - KeyPress:
-      - [Control_L, Alt_L, Down]
-      - click
-  - Rule:
-    - And:
+    - Later:
+      - 0.1
       - KeyPress:
-        - [Alt_L, Right]
+        - Meta_L
         - click
+- Rule:
+  - Process: jetbrains-phpstorm
+  - Key: [Mouse Gesture Button, released]
+  - Rule:
+    - MouseGesture: Mouse Up
+    - KeyPress:
+      - [Control_L, Alt_L, Shift_L, X]
+      - click
+- Rule:
+  - Process: jetbrains-phpstorm
+  - Key: [Mouse Gesture Button, pressed]
+  - Rule:
+    - Modifiers: Shift
+    - KeyPress:
+      - F10
+      - click
 ...
