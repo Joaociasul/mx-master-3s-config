@@ -33,7 +33,16 @@
   - Rule:
     - MouseGesture: Mouse Up
     - KeyPress:
-      - [Control_L, Shift_L, n]
+      - [Control_L, c]
+      - click
+    - KeyPress:
+      - [Control_L, t]
+      - click
+    - KeyPress:
+      - [Control_L, v]
+      - click
+    - KeyPress:
+      - KP_Enter
       - click
   - Rule:
     - MouseGesture: Mouse Down
